@@ -5487,7 +5487,7 @@ body {
   font-weight: 300;
   position: relative;
   display: inline-block;
-  left: 50%;
+  left: 40%;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -5552,7 +5552,7 @@ body {
       color: #20362f; }
       .main-nav.scrolling .nav-wrapper i, .main-nav.scrolling a.button-collapse, .main-nav.scrolling a.button-collapse i {
         height: 64px !important;
-        line-height: 70px !important; } 
+        line-height: 70px !important; }
     .main-nav.scrolling .nav-wrapper i, .main-nav.scrolling a.button-collapse, .main-nav.scrolling a.button-collapse i {
       color: #20362f; }
 

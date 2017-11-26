@@ -63,19 +63,13 @@
       <div class="main-container__services">
         <div class="container">
           <div class="row">
-            <div class="col s12 main-container__services--description"> 
+            <div class="col s12 main-container__services--description">
               <p><?php echo $descripcion[1]; ?></p>
             </div>
           </div>
         </div>
         <div class="row main-container__services--content">
-        <?php foreach ($servicios as $servicio): ?>
-          <div class="col s12 m6 l3">
-            <div class="main-container__services--box"><img class="main-container__services--image" src="http://2nuvgv1w18nc3wuldg1ie39y.wpengine.netdna-cdn.com/wp-content/uploads/2016/09/bbi2.png" alt=""/>
-              <h4 class="main-container__services--title"><?php echo $servicio ?></h4>
-            </div>
-          </div>
-        <?php endforeach ?>
+
         </div>
       </div>
     </main>

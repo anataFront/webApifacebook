@@ -1,12 +1,12 @@
-<?php 
-  
+<?php
+
 
   $nosotros = file_get_contents("https://graph.facebook.com/v2.10/421931754512932?fields=about%2Cdescription%2Cgeneral_info%2Cemails%2Cphone%2Clocation%2Clink%2Cphotos.limit(1)%7Bimages%7D%2Cname&access_token=1593609980853196%7Cy1yr7JOR8cEdFMOvCt8-P0SG1BY");
   $nosotros = json_decode($nosotros);
   $about = $nosotros;
   $descripcion = explode("\n\n", $about->description);
-  $servicios = explode("•", $descripcion[2]);
-  unset($servicios[0]);
+  //$servicios = explode("•", $descripcion[2]);
+  //unset($servicios[0]);
 
 
   $portadas = file_get_contents("https://graph.facebook.com/v2.10/421934104512697?fields=photos.limit(3)%7Bimages%2Cname%7D&access_token=1593609980853196%7Cy1yr7JOR8cEdFMOvCt8-P0SG1BY");
