@@ -53,8 +53,11 @@
     <main class="main scrollspy"  id="nosotros">
       <div class="container">
         <div class="row main-container">
-          <div class="col s12 l6"><iframe width="560" height="315" src="https://www.youtube.com/embed/-gr40bUCkEc" frameborder="0" allowfullscreen></iframe></div>
           <div class="col s12 l6">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/-gr40bUCkEc" frameborder="0" allowfullscreen></iframe>
+            </div>
+          <div class="col s12 l6">
+            <div class="video-container">
             <h3 class="main-title main--title">ATANDO Y DESATANDO EMOCIONES</h3>
             <p class="main-description"><?php echo $descripcion[0]; ?></p>
           </div>
