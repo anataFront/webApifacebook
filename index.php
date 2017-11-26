@@ -60,6 +60,9 @@
             </div>
           <div class="col s12 l6">
             <h3 class="main-title main--title">ATANDO Y DESATANDO EMOCIONES</h3>
+            <h5 class="light grey-text text-lighten-3 main-header__description"> Ata y Desata es una empresa especializada en organización de eventos, convenciones, producción fotográfica, activaciones y comunicación interna. Siempre caracterizados con el profesionalismo, calidad e inspiración que nuestros clientes prefieren.
+                                                                               Ofrecemos el concepto, producción y organización global de su evento. Nuestra experiencia y creatividad, junto con la pasión y dedicación de nuestro equipo logran que cualquier evento sea posible.
+                                                                                Somos especialistas en conseguir que el evento que quiere realizar sea original, divertido y efectivo. Nuestra larga experiencia nos da la confianza suficiente para garantizarle un éxito total.</h5>
             <p class="main-description"><?php echo $descripcion[0]; ?></p>
           </div>
         </div>
