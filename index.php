@@ -23,16 +23,18 @@
         <div class="container">
           <div class="nav-wrapper"><a class="brand-logo" href="#inicio"><img src="img/logo-blanco.svg" alt="" class="main-nav__image"></a><a class="button-collapse" href="#" data-activates="mobile-demo"><i class="material-icons icon-menu"></i></a>
             <ul class="right hide-on-med-and-down main-nav__content">
-              <li><a href="#nosotros">nosotros</a></li>
-              <li><a href="#publicaciones">publicaciones</a></li>
-              <li><a href="#programas">programas</a></li>
-              <li><a href="#eventos">eventos y noticias</a></li>
+              <li><a href="#inicio">INICIO</a></li>
+              <li><a href="#quienesomos">QUIÉNES SOMOS</a></li>
+              <li><a href="#servicios">SERVICIOS</a></li>
+              <li><a href="#videos">VIDEOS</a></li>
+              <li><a href="#contactanos">CONTÁCTANOS</a></li>
             </ul>
             <ul class="side-nav" id="mobile-demo">
-              <li><a href="#nosotros">nosotros</a></li>
-              <li><a href="#publicaciones">publicaciones</a></li>
-              <li><a href="#programas">programas</a></li>
-              <li><a href="#eventos">eventos y noticias</a></li>
+              <li><a href="#inicio">INICIO</a></li>
+              <li><a href="#quienesomos">QUIÉNES SOMOS</a></li>
+              <li><a href="#servicios">SERVICIOS</a></li>
+              <li><a href="#videos">VIDEOS</a></li>
+              <li><a href="contactanos">CONTACTANOS</a></li>
             </ul>
           </div>
         </div>
