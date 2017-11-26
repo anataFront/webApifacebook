@@ -5428,7 +5428,7 @@ input[type=range]:focus::-ms-fill-upper {
         background: rgba(0, 0, 0, 0.6);
         width: 100%;
         bottom: 0; }
-      .slider .slides li img {
+      .slider .slides li img { 
         height: 100%;
         width: 100%;
         background-size: cover;

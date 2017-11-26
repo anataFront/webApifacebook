@@ -45,8 +45,7 @@
         <?php foreach ($port as $portas): ?>
         <li><img src="<?php echo $portas->images[0]->source; ?>"/>
           <div class="caption center-align">
-            <h2 class="main-header__title">we know our destination</h2>
-            <h5 class="light grey-text text-lighten-3 main-header__description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id nesciunt eveniet vitae suscipit, illum tenetur molestiae corrup vitae suscipit, illum tenetur molestiae corrup</h5>
+            <h2 class="main-header__title">ATANDO Y DESATANDO EMOCIONES</h2>
           </div>
         </li>
         <?php endforeach ?>
@@ -134,7 +133,7 @@
       <div class="container">
         <div class="row">
           <div class="col s12">
-            <h3 class="main-events__title main--title">Eventos y noticias</h3>
+            <h3 class="main-events__title main--title">NUESTRO SERVICIOS</h3>
           </div>
         </div>
       </div>
