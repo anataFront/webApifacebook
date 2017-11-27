@@ -59,17 +59,15 @@
               <iframe width="560" height="315" src="https://www.youtube.com/embed/-gr40bUCkEc" frameborder="0" allowfullscreen></iframe></div>
             </div>
           <div class="col s12 l6">
-                        <p class="main-header__description"> Ata y Desata es una empresa especializada en organización de eventos, convenciones,
-                                                            producción fotográfica, activaciones y comunicación interna. Siempre caracterizados
-                                                            con el profesionalismo, calidad e inspiración que nuestros clientes prefieren.
-                                                            Ofrecemos el concepto, producción y organización global de su evento. Nuestra
-                                                            experiencia y creatividad, junto con la pasión y dedicación de nuestro equipo
-                                                            logran que cualquier evento sea posible.
-                                                            Somos especialistas en conseguir que el evento que quiere realizar sea original,
-                                                            divertido y efectivo. Nuestra larga experiencia nos da la confianza suficiente
-                                                            para garantizarle un éxito total. </p>
-            <div class="col s12 l6">
-          </div>
+            <p class="main-header__description"> Ata y Desata es una empresa especializada en organización de eventos, convenciones,
+            producción fotográfica, activaciones y comunicación interna. Siempre caracterizados
+            con el profesionalismo, calidad e inspiración que nuestros clientes prefieren.
+            Ofrecemos el concepto, producción y organización global de su evento. Nuestra
+            experiencia y creatividad, junto con la pasión y dedicación de nuestro equipo
+            logran que cualquier evento sea posible.
+            Somos especialistas en conseguir que el evento que quiere realizar sea original,
+            divertido y efectivo. Nuestra larga experiencia nos da la confianza suficiente
+            para garantizarle un éxito total. </p>
         </div>
       </div>
         </main>
@@ -79,20 +77,7 @@
           <div class="col s12">
             <h3 class="main-publisher__title main--title">Publicaciones</h3>
           </div>
-          <?php foreach ($blogs as $blog): ?>
-          <div class="col s12 m4">
-            <article class="main-publisher__article">
-              <div class="main-publisher__article--box">
-                <img class="main-publisher__article--image" src="<?php echo $blog->full_picture; ?>" alt=""/>
-              </div>
-              <a class="main-publisher__article--link" href="<?php echo $blog->link; ?>" target="_blank">
-                <h4 class="main-publisher__article--title"><?php echo $blog->name; ?></h4>
-              </a>
-              <div class="main-publisher__article--date"><i class="material-icons icon-calendar"></i><?php echo dateformat($blog->created_time); ?></div>
-              <p class="main-publisher__article--description"><?php echo substr( $blog->description, 0, 100); ?></p><a class="main-publisher__article--button" href="<?php echo $blog->link; ?>" target="_blank">Ver más</a>
-            </article>
-          </div>
-          <?php endforeach ?>
+          
         </div>
       </div>
     </section>

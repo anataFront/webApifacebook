@@ -5483,7 +5483,7 @@ body {
 
 .main--title {
   text-align: center;
-  font-size: 2.4em;
+  font-size: 2.3em;
   font-weight: 300;
   position: relative;
   display: inline-block;
@@ -5493,17 +5493,20 @@ body {
   transform: translateX(-50%);
   margin: 0 auto .5em;
   padding: .2em .5em .4em;
-  color: #20362f; }
+  text-transform: uppercase;
+  font-weight: 600;
+  color: black; }
   .main--title:after {
     content: "";
-    width: 100%;
-    height: 1px;
-    background: #009a3c;
+    width: 5em;
+    height: 3px;
+    background: red;
     position: absolute;
     bottom: 0;
     z-index: -2;
-    left: 0; }
-  .main--title:before {
+    left: 50%;
+    transform:translateX(-50%); }
+  /*.main--title:before {
     content: "\68";
     position: absolute;
     bottom: 0;
@@ -5517,7 +5520,7 @@ body {
     font-family: "fni" !important;
     -webkit-transform: translate(-50%, 50%);
     -ms-transform: translate(-50%, 50%);
-    transform: translate(-50%, 50%); }
+    transform: translate(-50%, 50%); }*/
 
 .navbar-fixed {
   height: 0; }
@@ -5566,7 +5569,7 @@ body {
   line-height: 1.5; }
 
 .main {
-  padding-top: 7em; }
+  padding-top: 3em;}
   .main-container {
     margin-bottom: 0;
     padding-bottom: 5em; }
