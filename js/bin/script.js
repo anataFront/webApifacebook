@@ -7,6 +7,13 @@ $( document ).ready(function(){
   $('.scrollspy').scrollSpy({
     scrollOffset:50
   });
+
+  $('.multiple-items').slick({
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 4
+  });
+  $('ul.tabs').tabs();
 });
 
 $(document).ready(function(){
@@ -43,3 +50,6 @@ $(function() {
       $('#preloader').fadeOut('slow');
     });
  });
+
+
+

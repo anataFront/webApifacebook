@@ -8,6 +8,8 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
     <link href="https://file.myfontastic.com/XEYMpRfP5Gdp65e8cdDeW6/icons.css" rel="stylesheet"/>
     <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/slick.css"/>
+    <link rel="stylesheet" href="css/slick-theme.css"/>
   </head>
   <body>
     <div id="preloader">
@@ -53,10 +55,13 @@
     <main class="main scrollspy"  id="nosotros">
       <div class="container">
         <div class="row main-container">
-
+          <div class="col s12">
+            <h3 class="main-events__title main--title ">Atando y desatando emociones</h3>
+          </div>
           <div class="col s12 l6">
-            <div class="video-container">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/-gr40bUCkEc" frameborder="0" allowfullscreen></iframe></div>
+              <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/-gr40bUCkEc" frameborder="0" allowfullscreen></iframe>
+              </div>
             </div>
           <div class="col s12 l6">
             <p class="main-header__description"> Ata y Desata es una empresa especializada en organización de eventos, convenciones,
@@ -70,42 +75,23 @@
             para garantizarle un éxito total. </p>
         </div>
       </div>
-        </main>
+    </main>
     <section class="main-publisher scrollspy" id="publicaciones">
       <div class="container">
         <div class="row">
           <div class="col s12">
-            <h3 class="main-publisher__title main--title">Publicaciones</h3>
-          </div>
-          
-        </div>
-      </div>
-    </section>
-    <section class="main-programs scrollspy" id="programas">
-      <div class="container">
-        <div class="row">
-          <div class="col s12">
-            <h3 class="main-programs__title main--title">Programas</h3>
-          </div>
-          <div class="col s12 m6 l3">
-            <article class="main-programs__article"><a class="main-programs__article--box" href=""><img class="main-programs__article--image" src="http://preview.itgeeksin.com/corporeal-business-html-template/assets/img/team/1.jpg" alt=""/></a>
-              <h5 class="main-programs__article--title">Title programs</h5><a class="main-programs__article--button" href=""><i class="material-icons icon-view"></i></a>
-            </article>
-          </div>
-          <div class="col s12 m6 l3">
-            <article class="main-programs__article"><a class="main-programs__article--box" href=""><img class="main-programs__article--image" src="http://preview.itgeeksin.com/corporeal-business-html-template/assets/img/team/1.jpg" alt=""/></a>
-              <h5 class="main-programs__article--title">Title programs</h5><a class="main-programs__article--button" href=""><i class="material-icons icon-view"></i></a>
-            </article>
-          </div>
-          <div class="col s12 m6 l3">
-            <article class="main-programs__article"><a class="main-programs__article--box" href=""><img class="main-programs__article--image" src="http://preview.itgeeksin.com/corporeal-business-html-template/assets/img/team/1.jpg" alt=""/></a>
-              <h5 class="main-programs__article--title">Title programs</h5><a class="main-programs__article--button" href=""><i class="material-icons icon-view"></i></a>
-            </article>
-          </div>
-          <div class="col s12 m6 l3">
-            <article class="main-programs__article"><a class="main-programs__article--box" href=""><img class="main-programs__article--image" src="http://preview.itgeeksin.com/corporeal-business-html-template/assets/img/team/1.jpg" alt=""/></a>
-              <h5 class="main-programs__article--title">Title programs</h5><a class="main-programs__article--button" href=""><i class="material-icons icon-view"></i></a>
-            </article>
+            <div class="multiple-items">
+              <?php 
+                $key = array(1, 2, 3, 4, 5 ,6);
+               ?>
+              <?php foreach ($key as $var): ?>
+                <div>
+                  <div class="multiple-images__slider">
+                    <img src="https://scontent.flim5-3.fna.fbcdn.net/v/t1.0-9/12036479_911296478905778_1022418800251815453_n.jpg?oh=15b05269a07b84f4d41910d030c408f1&oe=5ACFA691" alt="" class="responsive-img">
+                  </div>
+                </div>
+              <?php endforeach ?>
+            </div>
           </div>
         </div>
       </div>
@@ -114,45 +100,163 @@
       <div class="container">
         <div class="row">
           <div class="col s12">
-            <h3 class="main-events__title main--title">NUESTROS SERVICIOS</h3>
+            <h3 class="main-events__title main--title white-text">NUESTROS SERVICIOS</h3>
+          </div>
+          <div class="col s12">
+            <div class="main-tabs">
+              <ul class="tabs">
+                <li class="tab col s3"><a href="#test1" class="white-text">Test 1</a></li>
+                <li class="tab col s3"><a class="active white-text" href="#test2">Test 2</a></li>
+                <li class="tab col s3"><a href="#test3" class="white-text">Test 3</a></li>
+                <li class="tab col s3"><a href="#test4" class="white-text">Test 4</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-      <div class="row main-events__gallery">
+      <div class="row main-events__gallery" id="test1">
         <?php foreach ($eventos as $evento): ?>
-        <div class="col s12 m6 l4"><img class="materialboxed main-events__image" src="<?php echo $evento->images[0]->source; ?>" alt="" data-caption=""/></div>
+        <div class="col s12 m6 l3"><img class="materialboxed main-events__image" src="<?php echo $evento->images[0]->source; ?>" alt="" data-caption=""/></div>
+        <?php endforeach ?>
+      </div>
+      <div class="row main-events__gallery" id="test2">
+        <?php foreach ($eventos as $evento): ?>
+        <div class="col s12 m6 l3"><img class="materialboxed main-events__image" src="<?php echo $evento->images[0]->source; ?>" alt="" data-caption=""/></div>
+        <?php endforeach ?>
+      </div>
+      <div class="row main-events__gallery" id="test3">
+        <?php foreach ($eventos as $evento): ?>
+        <div class="col s12 m6 l3"><img class="materialboxed main-events__image" src="<?php echo $evento->images[0]->source; ?>" alt="" data-caption=""/></div>
+        <?php endforeach ?>
+      </div>
+      <div class="row main-events__gallery" id="test4">
+        <?php foreach ($eventos as $evento): ?>
+        <div class="col s12 m6 l3"><img class="materialboxed main-events__image" src="<?php echo $evento->images[0]->source; ?>" alt="" data-caption=""/></div>
         <?php endforeach ?>
       </div>
     </section>
-    <footer class="main-footer">
-      <div class="container main-footer__container">
+    <section class="main scrollspy u-padding__top--small"  id="nosotros">
+      <div class="container">
         <div class="row">
-          <div class="col s12">
-            <h3 class="main-footer__title">CONTACTO</h3>
-          </div>
-          <div class="col l4 s12">
-            <div class="main-footer__content"><i class="material-icons main-footer__icon icon-location"></i>
-              <p class="main-footer__description"><?php echo $about->location->street; ?> / <?php echo $about->location->city; ?> - <?php echo $about->location->country; ?></p>
+          <div class="col s12 l8">
+              <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/-gr40bUCkEc" frameborder="0" allowfullscreen></iframe>
+              </div>
             </div>
-          </div>
-          <div class="col l4 s12">
-            <div class="main-footer__content"><i class="material-icons main-footer__icon icon-cell"></i>
-              <p class="main-footer__description"><?php echo $about->phone ?></p>
+          <div class="col s12 l4">
+            <div class="row">
+              <div class="col s12">
+                <a href="#!" class="row">
+                  <div class="col s12 m6">
+                    <img src="img/ataydesatafrente.jpg" alt="" class="responsive-img">
+                  </div>
+                  <div class="col s12 m6">
+                    <p class="video-title">Nuevo video de youtube</p>
+                  </div>
+                </a>
+              </div>
+              <div class="col s12">
+                <a href="#!" class="row">
+                  <div class="col s12 m6">
+                    <img src="img/ataydesatafrente.jpg" alt="" class="responsive-img">
+                  </div>
+                  <div class="col s12 m6">
+                    <p class="video-title">Nuevo video de youtube</p>
+                  </div>
+                </a>
+              </div>
+              <div class="col s12">
+                <a href="#!" class="row">
+                  <div class="col s12 m6">
+                    <img src="img/ataydesatafrente.jpg" alt="" class="responsive-img">
+                  </div>
+                  <div class="col s12 m6">
+                    <p class="video-title">Nuevo video de youtube</p>
+                  </div>
+                </a>
+              </div>
+              <div class="col s12">
+                <a href="#!" class="row">
+                  <div class="col s12 m6">
+                    <img src="img/ataydesatafrente.jpg" alt="" class="responsive-img">
+                  </div>
+                  <div class="col s12 m6">
+                    <p class="video-title">Nuevo video de youtube</p>
+                  </div>
+                </a>
+              </div>
             </div>
+        </div>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="row">
+        <div class="col s12 m6 u-padding__none">
+          <div id="map">
+            
           </div>
-          <div class="col l4 s12">
-            <div class="main-footer__content"><i class="material-icons main-footer__icon icon-email"></i>
-              <p class="main-footer__description"><?php echo $about->emails[0] ?></p>
-            </div>
+          <script>
+            function initMap() {
+              var styleArray = [
+                {
+                  featureType: 'all',
+                  stylers: [
+                    { hue: "#e53935" },
+                    { saturation: -10 }
+                  ]
+                },{
+                  featureType: 'road.arterial',
+                  elementType: 'geometry',
+                  stylers: [
+                    { hue: '#e53935' },
+                    { saturation: 10 }
+                  ]
+                },{
+                  featureType: 'poi.business',
+                  elementType: 'labels',
+                  stylers: [
+                    { visibility: 'off' }
+                  ]
+                }
+              ];
+              var myLatLng = {lat: -12.0729396, lng: -77.0500979};
+
+              var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 16,
+                  scrollwheel: false,
+                  styles: styleArray,
+                center: myLatLng
+              });
+              var marker = new google.maps.Marker({
+                position: myLatLng,
+                map: map
+              });
+                    
+            }
+          </script>
+        </div>
+        <div class="col s12 m6 block">
+          <h3 class="main-title__footer main--title white-text">contáctanos</h3>
+          <p>Dirección : Calle manuel Miotal 137  Oficina 201 Miraflores - Lima</p>
+          <p>Teléfono : 264 2991</p>
+          <div class="main-footer__icons">
+            <a href="#!">
+              <img src="img/facebook-logo.png" alt="">
+            </a>
+            <a href="#!">
+              <img src="img/youtube-logo.png" alt="">
+            </a>
           </div>
         </div>
       </div>
       <div class="footer-copyright">
-        <div class="container">© 2017 Copyright <?php echo $about->name ?><a class="grey-text text-lighten-4 right" href="#!">crearperu.com</a></div>
+        <div class="container">Derechos reservados @ 2017<a class="grey-text text-lighten-4 right" href="#!">crearperu.com</a></div>
       </div>
     </footer>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/bin/materialize.min.js"></script>
+    <script type="text/javascript" src="js/bin/slick.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEy42HRFwBy9BVWvhLu2x0-VPko5ssLnA&callback=initMap"></script>
     <script type="text/javascript" src="js/bin/script.js"></script>
   </body>
 </html>

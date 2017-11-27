@@ -1973,7 +1973,7 @@ ul:not(.browser-default) {
     list-style-type: none; }
 
 a {
-  color: #20362f;
+  color: black;
   text-decoration: none;
   -webkit-tap-highlight-color: transparent; }
 
@@ -2214,7 +2214,7 @@ ul.staggered-list li {
 .page-footer {
   padding-top: 20px;
   color: #fff;
-  background-color: #009a3c; }
+  background-color: #ef5350; }
   .page-footer .footer-copyright {
     overflow: hidden;
     min-height: 50px;
@@ -5479,7 +5479,7 @@ input[type=range]:focus::-ms-fill-upper {
 
 /*COLORES PLANTILLA*/
 body {
-  color: #777; }
+  color: black; }
 
 .main--title {
   text-align: center;
@@ -5498,7 +5498,7 @@ body {
   color: black; }
   .main--title:after {
     content: "";
-    width: 5em;
+    width: 3em;
     height: 3px;
     background: red;
     position: absolute;
@@ -5549,7 +5549,7 @@ body {
     height: 64px;
     background: black; }
     .main-nav.scrolling .main-nav__image{
-      height: 55px;
+      height: 90px;
     }
     .main-nav.scrolling .main-nav__content a {
       color:white; }
@@ -5569,7 +5569,7 @@ body {
   line-height: 1.5; }
 
 .main {
-  padding-top: 3em;}
+  padding-top: 1em;}
   .main-container {
     margin-bottom: 0;
     padding-bottom: 5em; }
@@ -5619,7 +5619,7 @@ body {
 
 .main-publisher {
   padding: 4em 0;
-  background: #eee; }
+  background: #e53935; }
   .main-publisher__title {
     margin-bottom: 2em; }
     .main-publisher__title:before {
@@ -5767,7 +5767,7 @@ body {
         color: white; }
 
 .main-events {
-  background: #eee;
+  background: black;
   padding-top: 4em; }
   .main-events__title {
     margin-bottom: 1.5em; }
@@ -5782,9 +5782,9 @@ body {
     padding: 0; }
 
 .main-footer {
-  background: #20362f;
+  background: #e53935;
   color: white;
-  padding-top: 4em; }
+   }
   .main-footer__title {
     text-align: center;
     display: block;
@@ -5798,6 +5798,7 @@ body {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    margin-bottom: 0;
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
@@ -5848,6 +5849,7 @@ body {
     display: -ms-flexbox;
     display: flex; }
   .main-footer .footer-copyright {
+    background: black;
     -webkit-box-shadow: 1px 0 0 1px rgba(255, 255, 255, 0.05);
     box-shadow: 1px 0 0 1px rgba(255, 255, 255, 0.05);
     padding: 2em 0; }
@@ -5858,7 +5860,7 @@ body {
   left: 0;
   width: 100%;
   height: 100vh;
-  background:#20362f;
+  background:#e53935;
   z-index: 10000;
 }
 @keyframes loader {
@@ -5876,7 +5878,7 @@ body {
     transform: rotate(0);
   }
   55% {
-    background-color: #20362f;
+    background-color: white;
   }
   100% {
     transform: rotate(90deg);
@@ -5887,7 +5889,7 @@ body {
     transform: rotate(0);
   }
   55% {
-    background-color: #20362f;
+    background-color: white;
   }
   100% {
     transform: rotate(-90deg);
@@ -5907,7 +5909,7 @@ body {
   display: block;
   width: 40px;
   height: 40px;
-  background-color: #009a3c;
+  background-color: white;
   animation: loaderBlock 1.2s infinite ease-in-out both;
 }
 .loader span:nth-child(1) {
@@ -5927,4 +5929,61 @@ body {
 .loader span:nth-child(4) {
   bottom: 0;
   right: 0;
+}
+.multiple-images__slider{
+  padding: 1rem;
+}
+.main-tabs{
+  max-width: 600px;
+  margin: 0 auto;
+  color: white;
+}
+.main-tabs a{
+  display: block;
+  transition:all .3s;
+  padding: .5rem 1rem;
+  text-align: center;
+}
+.main-tabs a.active{
+  display: block;
+  box-shadow: 0 0 0 2px white;
+}
+.video-title{
+  font-weight: 500;
+  margin: 0;
+}
+.u-padding__top--small{
+  padding: 3rem;
+}
+.main-title__footer{
+  text-align: left;
+  left: 0;
+  transform: translateX(0);
+  margin-left: 0;
+  padding-left: 0;
+}
+.main-title__footer:after{
+  left: 0;
+  transform: translateX(0);
+  background: white;
+}
+.block{
+  display: block !important;
+  padding-top: 3rem !important;
+  padding-left: 2rem !important;
+}
+.main-footer__icons img{
+  display: block;
+  width: 2.5rem;
+}
+.main-footer__icons a{
+  display: inline-block;
+}
+#map{
+  display: flex;
+  width: 100%;
+  height: 30rem;
+}
+.u-padding__none{
+  padding: 0 !important;
 }
