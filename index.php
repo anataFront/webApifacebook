@@ -21,7 +21,7 @@
     <div class="navbar-fixed">
       <nav class="main-nav">
         <div class="container">
-          <div class="nav-wrapper"><a class="brand-logo" href="#inicio"><img src="img/logo-blanco.svg" alt="" class="main-nav__image"></a><a class="button-collapse" href="#" data-activates="mobile-demo"><i class="material-icons icon-menu"></i></a>
+          <div class="nav-wrapper"><a class="brand-logo" href="#inicio"><img src="img/logoata.png" alt="" class="main-nav__image"></a><a class="button-collapse" href="#" data-activates="mobile-demo"><i class="material-icons icon-menu"></i></a>
             <ul class="right hide-on-med-and-down main-nav__content">
               <li><a href="#inicio">INICIO</a></li>
               <li><a href="#quienesomos">QUIÉNES SOMOS</a></li>
@@ -43,7 +43,7 @@
     <header class="slider scrollspy" id="inicio">
       <ul class="slides">
         <?php foreach ($port as $portas): ?>
-        <li><img src="img/ataydesatafrente.jpg"/>
+         <li><img src="img/ataydesatafrente.jpg"/>
           <div class="caption center-align">
           </div>
         </li>
@@ -59,9 +59,16 @@
               <iframe width="560" height="315" src="https://www.youtube.com/embed/-gr40bUCkEc" frameborder="0" allowfullscreen></iframe></div>
             </div>
           <div class="col s12 l6">
-                        <p class="main-header__description"> Ata y Desata es una empresa especializada en organización de eventos, convenciones, producción fotográfica, activaciones y comunicación interna. Siempre caracterizados con el profesionalismo, calidad e inspiración que nuestros clientes prefieren.
-                                                  Ofrecemos el concepto, producción y organización global de su evento. Nuestra experiencia y creatividad, junto con la pasión y dedicación de nuestro equipo logran que cualquier evento sea posible.
-                                                    Somos especialistas en conseguir que el evento que quiere realizar sea original, divertido y efectivo. Nuestra larga experiencia nos da la confianza suficiente para garantizarle un éxito total. </p>
+                        <p class="main-header__description"> Ata y Desata es una empresa especializada en organización de eventos, convenciones,
+                                                            producción fotográfica, activaciones y comunicación interna. Siempre caracterizados
+                                                            con el profesionalismo, calidad e inspiración que nuestros clientes prefieren.
+                                                            Ofrecemos el concepto, producción y organización global de su evento. Nuestra
+                                                            experiencia y creatividad, junto con la pasión y dedicación de nuestro equipo
+                                                            logran que cualquier evento sea posible.
+                                                            Somos especialistas en conseguir que el evento que quiere realizar sea original,
+                                                            divertido y efectivo. Nuestra larga experiencia nos da la confianza suficiente
+                                                            para garantizarle un éxito total. </p>
+            <div class="col s12 l6">
           </div>
         </div>
       </div>

@@ -3245,7 +3245,7 @@ nav {
       font-size: 1rem;
       color: #fff;
       display: block;
-      padding: 0 15px;
+      padding: 0 51px;
       cursor: pointer; }
       nav ul a.btn, nav ul a.btn-large, nav ul a.btn-large, nav ul a.btn-flat, nav ul a.btn-floating {
         margin-top: -2px;
@@ -5468,13 +5468,13 @@ input[type=range]:focus::-ms-fill-upper {
       height: 16px;
       width: 16px;
       margin: 0 12px;
-      background-color: #e0e0e0;
+      background-color: #E7E8E8;
       -webkit-transition: background-color .3s;
       -o-transition: background-color .3s;
       transition: background-color .3s;
-      border-radius: 50%; }
+      border-radius: 30%; }
       .slider .indicators .indicator-item.active {
-        background-color: #4CAF50; }
+        background-color: ##e0e0e024; }
 
 /*COLORES PLANTILLA*/
 body {
@@ -5531,13 +5531,13 @@ body {
   transition: all .3s; }
   .main-nav__image{
     display: block;
-    height: 80px;
-    margin-top: 5px;
+    height: 240px;
+    margin-top: 4px;
     transition:all .3s;
   }
 
   .main-nav__content a {
-    color: #d0d0d0; }
+    color: #FFFFFF; }
   .main-nav.scrolling {
     -webkit-box-shadow: -1px 0 0 1px rgba(0, 0, 0, 0.2);
     box-shadow: -1px 0 0 1px rgba(0, 0, 0, 0.2);
