@@ -2943,6 +2943,11 @@ nav ul a span.badge {
         margin-left: auto;
         left: auto;
         right: auto; }
+      .row .col.l20 {
+        width: 20%;
+        margin-left: auto;
+        left: auto;
+        right: auto; }
       .row .col.offset-l1 {
         margin-left: 8.33333%; }
       .row .col.pull-l1 {
@@ -5448,7 +5453,7 @@ input[type=range]:focus::-ms-fill-upper {
           }
         }
     .flow-text {
-      font-size: 1.68rem; } }
+      font-size: 1.68rem; }
         .slider .slides li .caption p {
           color: #e0e0e0; }
       .slider .slides li.active {
@@ -5500,7 +5505,7 @@ body {
     content: "";
     width: 3em;
     height: 3px;
-    background: red;
+    background: #d71920;
     position: absolute;
     bottom: 0;
     z-index: -2;
@@ -5549,7 +5554,7 @@ body {
     height: 64px;
     background: black; }
     .main-nav.scrolling .main-nav__image{
-      height: 90px;
+      height: 100px;
     }
     .main-nav.scrolling .main-nav__content a {
       color:white; }
@@ -5566,6 +5571,7 @@ body {
 
 .main-header__description {
   font-size: 1.2em;
+  margin: 0;
   line-height: 1.5; }
 
 .main {
@@ -5619,7 +5625,7 @@ body {
 
 .main-publisher {
   padding: 4em 0;
-  background: #e53935; }
+  background: url(../img/clientes.jpg); }
   .main-publisher__title {
     margin-bottom: 2em; }
     .main-publisher__title:before {
@@ -5767,7 +5773,7 @@ body {
         color: white; }
 
 .main-events {
-  background: black;
+  background: url(../img/servicios.jpg);
   padding-top: 4em; }
   .main-events__title {
     margin-bottom: 1.5em; }
@@ -5782,7 +5788,7 @@ body {
     padding: 0; }
 
 .main-footer {
-  background: #e53935;
+  background: #d71920;
   color: white;
    }
   .main-footer__title {
@@ -5934,7 +5940,7 @@ body {
   padding: 1rem;
 }
 .main-tabs{
-  max-width: 600px;
+  max-width: 900px;
   margin: 0 auto;
   color: white;
 }
@@ -5943,17 +5949,18 @@ body {
   transition:all .3s;
   padding: .5rem 1rem;
   text-align: center;
+  text-transform: uppercase;
 }
 .main-tabs a.active{
   display: block;
-  box-shadow: 0 0 0 2px white;
+  box-shadow: 0 0 0 2px red;
 }
 .video-title{
   font-weight: 500;
   margin: 0;
 }
 .u-padding__top--small{
-  padding: 3rem;
+  padding: 4rem 0 3rem;
 }
 .main-title__footer{
   text-align: left;
@@ -5986,4 +5993,28 @@ body {
 }
 .u-padding__none{
   padding: 0 !important;
+}
+
+@font-face {
+    font-family: 'sciflysans';
+    src: url('../fonts/scifly-sans/scifly-sans-webfont.woff2') format('woff2'),
+         url('../fonts/scifly-sans/scifly-sans-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'dama';
+    src: url('../fonts/dama/ufonts.com_interface-dama-webfont.woff2') format('woff2'),
+         url('../fonts/dama/ufonts.com_interface-dama-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'sciflysans', sans-serif;
+}
+body{
+  font-family: 'dama',sans-serif;
 }

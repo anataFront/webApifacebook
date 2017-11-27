@@ -26,14 +26,14 @@
           <div class="nav-wrapper"><a class="brand-logo" href="#inicio"><img src="img/logo.png" alt="" class="main-nav__image"></a><a class="button-collapse" href="#" data-activates="mobile-demo"><i class="material-icons icon-menu"></i></a>
             <ul class="right hide-on-med-and-down main-nav__content">
               <li><a href="#inicio">INICIO</a></li>
-              <li><a href="#quienesomos">QUIÉNES SOMOS</a></li>
+              <li><a href="#nosotros">QUIÉNES SOMOS</a></li>
               <li><a href="#servicios">SERVICIOS</a></li>
               <li><a href="#videos">VIDEOS</a></li>
               <li><a href="#contactanos">CONTÁCTANOS</a></li>
             </ul>
             <ul class="side-nav" id="mobile-demo">
               <li><a href="#inicio">INICIO</a></li>
-              <li><a href="#quienesomos">QUIÉNES SOMOS</a></li>
+              <li><a href="#nosotros">QUIÉNES SOMOS</a></li>
               <li><a href="#servicios">SERVICIOS</a></li>
               <li><a href="#videos">VIDEOS</a></li>
               <li><a href="contactanos">CONTACTANOS</a></li>
@@ -45,11 +45,11 @@
     <header class="slider scrollspy" id="inicio">
       <ul class="slides">
         <?php foreach ($port as $portas): ?>
-         <li><img src="img/ataydesatafrente.jpg"/>
+         <li><img src="<?php echo $portas->images[0]->source; ?>"/>
           <div class="caption center-align">
           </div>
         </li>
-        <?php endforeach ?>
+        <?php endforeach; ?>
       </ul>
     </header>
     <main class="main scrollspy"  id="nosotros">
@@ -64,15 +64,7 @@
               </div>
             </div>
           <div class="col s12 l6">
-            <p class="main-header__description"> Ata y Desata es una empresa especializada en organización de eventos, convenciones,
-            producción fotográfica, activaciones y comunicación interna. Siempre caracterizados
-            con el profesionalismo, calidad e inspiración que nuestros clientes prefieren.
-            Ofrecemos el concepto, producción y organización global de su evento. Nuestra
-            experiencia y creatividad, junto con la pasión y dedicación de nuestro equipo
-            logran que cualquier evento sea posible.
-            Somos especialistas en conseguir que el evento que quiere realizar sea original,
-            divertido y efectivo. Nuestra larga experiencia nos da la confianza suficiente
-            para garantizarle un éxito total. </p>
+            <p class="main-header__description"> <?php echo str_replace("\n\n", "<br><br>", $descripcion); ?> </p>
         </div>
       </div>
     </main>
@@ -81,13 +73,10 @@
         <div class="row">
           <div class="col s12">
             <div class="multiple-items">
-              <?php 
-                $key = array(1, 2, 3, 4, 5 ,6);
-               ?>
-              <?php foreach ($key as $var): ?>
+              <?php foreach ($articulos as $images): ?>
                 <div>
                   <div class="multiple-images__slider">
-                    <img src="https://scontent.flim5-3.fna.fbcdn.net/v/t1.0-9/12036479_911296478905778_1022418800251815453_n.jpg?oh=15b05269a07b84f4d41910d030c408f1&oe=5ACFA691" alt="" class="responsive-img">
+                    <img src="<?php echo $images->images[0]->source; ?>" alt="" class="responsive-img">
                   </div>
                 </div>
               <?php endforeach ?>
@@ -96,7 +85,7 @@
         </div>
       </div>
     </section>
-    <section class="main-events scrollspy" id="nuestrosservicios">
+    <section class="main-events scrollspy" id="servicios">
       <div class="container">
         <div class="row">
           <div class="col s12">
@@ -105,10 +94,10 @@
           <div class="col s12">
             <div class="main-tabs">
               <ul class="tabs">
-                <li class="tab col s3"><a href="#test1" class="white-text">Test 1</a></li>
-                <li class="tab col s3"><a class="active white-text" href="#test2">Test 2</a></li>
-                <li class="tab col s3"><a href="#test3" class="white-text">Test 3</a></li>
-                <li class="tab col s3"><a href="#test4" class="white-text">Test 4</a></li>
+                <li class="tab col s12 m6 l3"><a href="#test1" class="white-text active">Eventos</a></li>
+                <li class="tab col s12 m6 l3"><a class="white-text" href="#test2">Activaciones</a></li>
+                <li class="tab col s12 m6 l3"><a href="#test3" class="white-text">Convenciones</a></li>
+                <li class="tab col s12 m6 l3"><a href="#test4" class="white-text">IMAGEN Y MARKETING DIGITAL</a></li>
               </ul>
             </div>
           </div>
@@ -116,26 +105,26 @@
       </div>
       <div class="row main-events__gallery" id="test1">
         <?php foreach ($eventos as $evento): ?>
-        <div class="col s12 m6 l3"><img class="materialboxed main-events__image" src="<?php echo $evento->images[0]->source; ?>" alt="" data-caption=""/></div>
+        <div class="col s12 m6 l20"><img class="materialboxed main-events__image" src="<?php echo $evento->images[0]->source; ?>" alt="" data-caption=""/></div>
         <?php endforeach ?>
       </div>
       <div class="row main-events__gallery" id="test2">
-        <?php foreach ($eventos as $evento): ?>
-        <div class="col s12 m6 l3"><img class="materialboxed main-events__image" src="<?php echo $evento->images[0]->source; ?>" alt="" data-caption=""/></div>
+        <?php foreach ($activations as $evento): ?>
+        <div class="col s12 m6 l20"><img class="materialboxed main-events__image" src="<?php echo $evento->images[0]->source; ?>" alt="" data-caption=""/></div>
         <?php endforeach ?>
       </div>
       <div class="row main-events__gallery" id="test3">
-        <?php foreach ($eventos as $evento): ?>
-        <div class="col s12 m6 l3"><img class="materialboxed main-events__image" src="<?php echo $evento->images[0]->source; ?>" alt="" data-caption=""/></div>
+        <?php foreach ($conventions as $evento): ?>
+        <div class="col s12 m6 l20"><img class="materialboxed main-events__image" src="<?php echo $evento->images[0]->source; ?>" alt="" data-caption=""/></div>
         <?php endforeach ?>
       </div>
       <div class="row main-events__gallery" id="test4">
-        <?php foreach ($eventos as $evento): ?>
-        <div class="col s12 m6 l3"><img class="materialboxed main-events__image" src="<?php echo $evento->images[0]->source; ?>" alt="" data-caption=""/></div>
+        <?php foreach ($mkt as $evento): ?>
+        <div class="col s12 m6 l20"><img class="materialboxed main-events__image" src="<?php echo $evento->images[0]->source; ?>" alt="" data-caption=""/></div>
         <?php endforeach ?>
       </div>
     </section>
-    <section class="main scrollspy u-padding__top--small"  id="nosotros">
+    <section class="main scrollspy u-padding__top--small"  id="videos">
       <div class="container">
         <div class="row">
           <div class="col s12 l8">
@@ -145,6 +134,7 @@
             </div>
           <div class="col s12 l4">
             <div class="row">
+
               <div class="col s12">
                 <a href="#!" class="row">
                   <div class="col s12 m6">
@@ -155,41 +145,12 @@
                   </div>
                 </a>
               </div>
-              <div class="col s12">
-                <a href="#!" class="row">
-                  <div class="col s12 m6">
-                    <img src="img/ataydesatafrente.jpg" alt="" class="responsive-img">
-                  </div>
-                  <div class="col s12 m6">
-                    <p class="video-title">Nuevo video de youtube</p>
-                  </div>
-                </a>
-              </div>
-              <div class="col s12">
-                <a href="#!" class="row">
-                  <div class="col s12 m6">
-                    <img src="img/ataydesatafrente.jpg" alt="" class="responsive-img">
-                  </div>
-                  <div class="col s12 m6">
-                    <p class="video-title">Nuevo video de youtube</p>
-                  </div>
-                </a>
-              </div>
-              <div class="col s12">
-                <a href="#!" class="row">
-                  <div class="col s12 m6">
-                    <img src="img/ataydesatafrente.jpg" alt="" class="responsive-img">
-                  </div>
-                  <div class="col s12 m6">
-                    <p class="video-title">Nuevo video de youtube</p>
-                  </div>
-                </a>
-              </div>
+
             </div>
         </div>
       </div>
     </section>
-    <footer class="main-footer">
+    <footer class="main-footer" id="contactanos">
       <div class="row">
         <div class="col s12 m6 u-padding__none">
           <div id="map">
@@ -219,7 +180,7 @@
                   ]
                 }
               ];
-              var myLatLng = {lat: -12.0729396, lng: -77.0500979};
+              var myLatLng = {lat: <?php echo $lat ?>, lng: <?php echo $long ?>};
 
               var map = new google.maps.Map(document.getElementById('map'), {
                 zoom: 16,
@@ -237,10 +198,10 @@
         </div>
         <div class="col s12 m6 block">
           <h3 class="main-title__footer main--title white-text">contáctanos</h3>
-          <p>Dirección : Calle manuel Miotal 137  Oficina 201 Miraflores - Lima</p>
-          <p>Teléfono : 264 2991</p>
+          <p>Dirección : <?php echo $location ?></p>
+          <p>Teléfono : <?php echo $phone ?></p>
           <div class="main-footer__icons">
-            <a href="#!">
+            <a href="<?php echo $link ?>">
               <img src="img/facebook-logo.png" alt="">
             </a>
             <a href="#!">
