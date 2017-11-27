@@ -20,7 +20,7 @@ $(document).ready(function(){
       if(!flag){
         //aqui es blanco
         $( ".main-nav" ).addClass( "scrolling" );
-        $(".main-nav__image").attr("src","img/logo.svg");
+        $(".main-nav__image").attr("src","img/logo.png");
 
         
         flag = true;
@@ -29,7 +29,7 @@ $(document).ready(function(){
       if(flag){
         //aqui es transparente
         $( ".main-nav" ).removeClass( "scrolling" );
-        $(".main-nav__image").attr("src","img/logo-blanco.svg");
+        $(".main-nav__image").attr("src","img/logo.png");
 
           
         flag = false;

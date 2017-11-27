@@ -6,7 +6,7 @@
     <meta charset="UTF-8"/>
     <title><?php echo $about->name ?></title>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
-    <link href="" rel="stylesheet"/>
+    <link href="https://file.myfontastic.com/XEYMpRfP5Gdp65e8cdDeW6/icons.css" rel="stylesheet"/>
     <link rel="stylesheet" href="css/style.css"/>
   </head>
   <body>
@@ -21,7 +21,7 @@
     <div class="navbar-fixed">
       <nav class="main-nav">
         <div class="container">
-          <div class="nav-wrapper"><a class="brand-logo" href="#inicio"><img src="img/logoata.png" alt="" class="main-nav__image"></a><a class="button-collapse" href="#" data-activates="mobile-demo"><i class="material-icons icon-menu"></i></a>
+          <div class="nav-wrapper"><a class="brand-logo" href="#inicio"><img src="img/logo.png" alt="" class="main-nav__image"></a><a class="button-collapse" href="#" data-activates="mobile-demo"><i class="material-icons icon-menu"></i></a>
             <ul class="right hide-on-med-and-down main-nav__content">
               <li><a href="#inicio">INICIO</a></li>
               <li><a href="#quienesomos">QUIÉNES SOMOS</a></li>
