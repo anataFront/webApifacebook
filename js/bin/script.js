@@ -11,13 +11,15 @@ $( document ).ready(function(){
   $('.multiple-items').slick({
     infinite: true,
     slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1500,
     responsive: [
     {
       breakpoint: 1024,
       settings: {
         slidesToShow: 4,
-        slidesToScroll: 4,
+        slidesToScroll: 1,
         infinite: true,
         dots: true
       }
@@ -52,7 +54,7 @@ $(document).ready(function(){
       if(!flag){
         //aqui es blanco
         $( ".main-nav" ).addClass( "scrolling" );
-        $(".main-nav__image").attr("src","img/logo.png");
+        $(".main-nav__image").attr("src","img/logo-second.jpg");
 
         
         flag = true;

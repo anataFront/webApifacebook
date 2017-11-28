@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="css/slick.css"/>
     <link rel="stylesheet" href="css/slick-theme.css"/>
+    <link rel="icon" type="image/x-icon" href="img/favicon.jpg"/>
   </head>
   <body>
     <div id="preloader">
@@ -44,20 +45,25 @@
     </div>
     <header class="slider scrollspy" id="inicio">
       <ul class="slides">
-        <?php foreach ($port as $portas): ?>
-         <li><img src="<?php echo $portas->images[0]->source; ?>"/>
-          <div class="caption center-align">
-          </div>
+        <li>
+          <img src="<?php echo $port[2]->images[0]->source; ?>"/>
         </li>
-        <?php endforeach; ?>
+        <li>
+          <img src="<?php echo $port[1]->images[0]->source; ?>"/>
+        </li>
+        <li>
+          <img src="<?php echo $port[0]->images[0]->source; ?>"/>
+        </li>
       </ul>
     </header>
     <main class="main scrollspy"  id="nosotros">
       <div class="container">
-        <div class="row main-container">
+        <div class="row">
           <div class="col s12">
             <h3 class="main-events__title main--title ">Atando y desatando emociones</h3>
           </div>
+        </div>
+        <div class="row main-container valign-wrapper">
           <div class="col s12 l6">
               <div class="video-container">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/-gr40bUCkEc" frameborder="0" allowfullscreen></iframe>
@@ -65,6 +71,8 @@
             </div>
           <div class="col s12 l6">
             <p class="main-header__description"> <?php echo str_replace("\n\n", "<br><br>", $descripcion); ?> </p>
+            <br>
+            <a class="waves-effect waves-light btn-large red darken-2">Descargar brochure</a>
         </div>
       </div>
     </main>
@@ -104,23 +112,39 @@
         </div>
       </div>
       <div class="row main-events__gallery" id="test1">
+        <?php $count = 1; ?>
         <?php foreach ($eventos as $evento): ?>
-        <div class="col s12 m6 l20"><img class="materialboxed main-events__image" src="<?php echo $evento->images[0]->source; ?>" alt="" data-caption=""/></div>
+          <?php if ($count !=1): ?>
+            <div class="col s12 m6 l20"><img class="materialboxed main-events__image" src="<?php echo $evento->images[0]->source; ?>" alt="" data-caption=""/></div>
+          <?php endif ?>
+          <?php $count++; ?>
         <?php endforeach ?>
       </div>
       <div class="row main-events__gallery" id="test2">
+        <?php $count = 1; ?>
         <?php foreach ($activations as $evento): ?>
-        <div class="col s12 m6 l20"><img class="materialboxed main-events__image" src="<?php echo $evento->images[0]->source; ?>" alt="" data-caption=""/></div>
+        <?php if ($count !=1): ?>
+          <div class="col s12 m6 l20"><img class="materialboxed main-events__image" src="<?php echo $evento->images[0]->source; ?>" alt="" data-caption=""/></div>
+        <?php endif ?>
+        <?php $count++; ?>
         <?php endforeach ?>
       </div>
       <div class="row main-events__gallery" id="test3">
+        <?php $count = 1; ?>
         <?php foreach ($conventions as $evento): ?>
-        <div class="col s12 m6 l20"><img class="materialboxed main-events__image" src="<?php echo $evento->images[0]->source; ?>" alt="" data-caption=""/></div>
+        <?php if ($count !=1): ?>
+          <div class="col s12 m6 l20"><img class="materialboxed main-events__image" src="<?php echo $evento->images[0]->source; ?>" alt="" data-caption=""/></div>
+        <?php endif ?>
+        <?php $count++; ?>
         <?php endforeach ?>
       </div>
       <div class="row main-events__gallery" id="test4">
+        <?php $count = 1; ?>
         <?php foreach ($mkt as $evento): ?>
-        <div class="col s12 m6 l20"><img class="materialboxed main-events__image" src="<?php echo $evento->images[0]->source; ?>" alt="" data-caption=""/></div>
+        <?php if ($count !=1): ?>
+          <div class="col s12 m6 l20"><img class="materialboxed main-events__image" src="<?php echo $evento->images[0]->source; ?>" alt="" data-caption=""/></div>
+        <?php endif ?>
+        <?php $count++; ?>
         <?php endforeach ?>
       </div>
     </section>
@@ -200,18 +224,19 @@
           <h3 class="main-title__footer main--title white-text">contáctanos</h3>
           <p>Dirección : <?php echo $location ?></p>
           <p>Teléfono : <?php echo $phone ?></p>
+          <p>Correo : <?php echo $email ?></p>
           <div class="main-footer__icons">
-            <a href="<?php echo $link ?>">
+            <a href="<?php echo $link ?>" target="_blank">
               <img src="img/facebook-logo.png" alt="">
             </a>
-            <a href="#!">
+            <a href="#!" target="_blank">
               <img src="img/youtube-logo.png" alt="">
             </a>
           </div>
         </div>
       </div>
       <div class="footer-copyright">
-        <div class="container">Derechos reservados @ 2017<a class="grey-text text-lighten-4 right" href="#!">crearperu.com</a></div>
+        <div class="container">Copyright © 2017 - Ata&Desata<a class="grey-text text-lighten-4 right" href="#!" target="_blank">crearperu.com</a></div>
       </div>
     </footer>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
