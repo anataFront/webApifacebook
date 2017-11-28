@@ -5996,6 +5996,9 @@ body {
 .u-padding__none{
   padding: 0 !important;
 }
+.u-margin__none{
+  margin: 0;
+}
 
 @font-face {
     font-family: 'sciflysans';

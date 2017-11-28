@@ -60,7 +60,7 @@
       <div class="container">
         <div class="row">
           <div class="col s12">
-            <h3 class="main-events__title main--title ">Atando y desatando emociones</h3>
+            <h3 class="main-events__title main--title u-margin__none">Atando y desatando emociones</h3>
           </div>
         </div>
         <div class="row main-container valign-wrapper">
