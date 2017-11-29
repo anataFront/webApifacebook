@@ -1,4 +1,3 @@
-<?php include "app/functions.php"; ?>
 <?php include "app/api.php"; ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -7,7 +6,7 @@
     <title><?php echo $about->name ?></title>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
     <link href="https://file.myfontastic.com/XEYMpRfP5Gdp65e8cdDeW6/icons.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/style-dist.css"/>
     <link rel="stylesheet" href="css/slick.css"/>
     <link rel="stylesheet" href="css/slick-theme.css"/>
     <link rel="icon" type="image/x-icon" href="img/favicon.jpg"/>
@@ -114,7 +113,7 @@
       <div class="row main-events__gallery" id="test1">
         <?php $count = 1; ?>
         <?php foreach ($eventos as $evento): ?>
-          <?php if ($count !=1): ?>
+          <?php if ($count <16): ?>
             <div class="col s12 m6 l20"><img class="materialboxed main-events__image" src="<?php echo $evento->images[0]->source; ?>" alt="" data-caption=""/></div>
           <?php endif ?>
           <?php $count++; ?>
@@ -123,7 +122,7 @@
       <div class="row main-events__gallery" id="test2">
         <?php $count = 1; ?>
         <?php foreach ($activations as $evento): ?>
-        <?php if ($count !=1): ?>
+        <?php if ($count <16): ?>
           <div class="col s12 m6 l20"><img class="materialboxed main-events__image" src="<?php echo $evento->images[0]->source; ?>" alt="" data-caption=""/></div>
         <?php endif ?>
         <?php $count++; ?>
@@ -132,7 +131,7 @@
       <div class="row main-events__gallery" id="test3">
         <?php $count = 1; ?>
         <?php foreach ($conventions as $evento): ?>
-        <?php if ($count !=1): ?>
+        <?php if ($count <16): ?>
           <div class="col s12 m6 l20"><img class="materialboxed main-events__image" src="<?php echo $evento->images[0]->source; ?>" alt="" data-caption=""/></div>
         <?php endif ?>
         <?php $count++; ?>
@@ -141,7 +140,7 @@
       <div class="row main-events__gallery" id="test4">
         <?php $count = 1; ?>
         <?php foreach ($mkt as $evento): ?>
-        <?php if ($count !=1): ?>
+        <?php if ($count <16): ?>
           <div class="col s12 m6 l20"><img class="materialboxed main-events__image" src="<?php echo $evento->images[0]->source; ?>" alt="" data-caption=""/></div>
         <?php endif ?>
         <?php $count++; ?>
@@ -156,7 +155,7 @@
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/SRI3nBwwrv4" frameborder="0" allowfullscreen id="carouselVideos"></iframe>
               </div>
             </div>
-          <div class="col s12 l4">
+          <div class="col s12 l4 videos-items">
             <div class="row u-margin__none" >
               <?php $count = 1; ?>
               <?php foreach ($video as $item): ?>
@@ -233,20 +232,20 @@
             <a href="<?php echo $link ?>" target="_blank">
               <img src="img/facebook-logo.png" alt="">
             </a>
-            <a href="#!" target="_blank">
+            <a href="https://www.youtube.com/channel/<?php echo $video[0]->snippet->channelId; ?>" target="_blank">
               <img src="img/youtube-logo.png" alt="">
             </a>
           </div>
         </div>
       </div>
       <div class="footer-copyright">
-        <div class="container">Copyright © 2017 - Ata&Desata<a class="grey-text text-lighten-4 right" href="#!" target="_blank">crearperu.com</a></div>
+        <div class="container">Copyright © 2017 - Ata&Desata<a class="grey-text text-lighten-4 right" href="https://crearperu.com" target="_blank">crearperu.com</a></div>
       </div>
     </footer>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/bin/materialize.min.js"></script>
     <script type="text/javascript" src="js/bin/slick.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEy42HRFwBy9BVWvhLu2x0-VPko5ssLnA&callback=initMap"></script>
-    <script type="text/javascript" src="js/bin/script.js"></script>
+    <script type="text/javascript" src="js/bin/script-dist.js"></script>
   </body>
 </html>

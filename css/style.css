@@ -6043,3 +6043,14 @@ body{
   display: block;
   margin-bottom: 0;
 }
+.carouselVideos-item img{
+  display: block;
+  width: 100%;
+}
+@media only screen and (max-width: 600px){
+  .videos-items{
+    margin: 2rem 0;
+  }
+}
+.main-events__gallery{
+}
