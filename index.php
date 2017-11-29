@@ -72,7 +72,7 @@
           <div class="col s12 l6">
             <p class="main-header__description"> <?php echo str_replace("\n\n", "<br><br>", $descripcion); ?> </p>
             <br>
-            <a class="waves-effect waves-light btn-large red darken-2">Descargar brochure</a>
+            <a class="waves-effect waves-light btn-large red darken-2" href="img/brochure.pdf" target="_blank">Descargar brochure</a>
         </div>
       </div>
     </main>
@@ -150,31 +150,35 @@
     </section>
     <section class="main scrollspy u-padding__top--small"  id="videos">
       <div class="container">
-        <div class="row">
+        <div class="row u-margin__none">
           <div class="col s12 l8">
               <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/-gr40bUCkEc" frameborder="0" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/SRI3nBwwrv4" frameborder="0" allowfullscreen id="carouselVideos"></iframe>
               </div>
             </div>
           <div class="col s12 l4">
-            <div class="row">
-
-              <div class="col s12">
-                <a href="#!" class="row">
-                  <div class="col s12 m6">
-                    <img src="img/ataydesatafrente.jpg" alt="" class="responsive-img">
-                  </div>
-                  <div class="col s12 m6">
-                    <p class="video-title">Nuevo video de youtube</p>
-                  </div>
-                </a>
-              </div>
-
+            <div class="row u-margin__none" >
+              <?php $count = 1; ?>
+              <?php foreach ($video as $item): ?>
+                <?php if ($count !=1): ?>
+                <div class="col s12 u-margin___bottom--small">
+                  <a href="#!" class="row carouselVideos-item" data-id="<?php echo $item->snippet->resourceId->videoId; ?>">
+                    <div class="col s12 m6">
+                      <img src="<?php echo $item->snippet->thumbnails->medium->url; ?>" alt="" class="responsive-img">
+                    </div>
+                    <div class="col s12 m6">
+                      <p class="video-title"><?php echo $item->snippet->title; ?></p>
+                    </div>
+                  </a>
+                </div>
+                <?php endif ?>
+                <?php $count++; ?>
+              <?php endforeach ?>
             </div>
         </div>
       </div>
     </section>
-    <footer class="main-footer" id="contactanos">
+    <footer class="main-footer scrollspy" id="contactanos">
       <div class="row">
         <div class="col s12 m6 u-padding__none">
           <div id="map">

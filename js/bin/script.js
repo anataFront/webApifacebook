@@ -41,6 +41,12 @@ $( document ).ready(function(){
     ]
   });
   $('ul.tabs').tabs();
+
+  $( ".carouselVideos-item" ).click(function() {
+    var url= $(this).data( 'id' );
+    $("#carouselVideos").attr("src","https://www.youtube.com/embed/" + url);
+  });
+
 });
 
 $(document).ready(function(){
@@ -54,7 +60,7 @@ $(document).ready(function(){
       if(!flag){
         //aqui es blanco
         $( ".main-nav" ).addClass( "scrolling" );
-        $(".main-nav__image").attr("src","img/logo-second.jpg");
+        $(".main-nav__image").attr("src","img/logo-second.svg");
 
         
         flag = true;

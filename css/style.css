@@ -5555,7 +5555,7 @@ body {
     height: 64px;
     background: black; }
     .main-nav.scrolling .main-nav__image{
-      height: 100px;
+      height: 60px;
     }
     .main-nav.scrolling .main-nav__content a {
       color:white; }
@@ -6035,4 +6035,11 @@ body{
 }
 .slick-prev:before,.slick-next:before{
   display: none !important; 
+}
+.u-margin___bottom--small{
+  margin-bottom: .5rem;
+}
+.carouselVideos-item{
+  display: block;
+  margin-bottom: 0;
 }

@@ -37,5 +37,8 @@
   $mkt = $mkt->photos->data;
 
   
-
+  $videos = file_get_contents("https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=50&playlistId=PLw_IYT1S1P-Wa7gOTQ44EAdFdNMpr7xqM&key=AIzaSyCUNR0s2ZzVQDyGuhTpN3AxoppHJ0_dM2Y");
+  $videos = json_decode($videos);
+  $video = $videos->items;
+  //print_r($video);
  ?>
